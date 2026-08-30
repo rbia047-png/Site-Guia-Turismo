@@ -95,3 +95,211 @@ input[type="search"] {
     width: 1800px;
     height: 50px;
 }
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+/* Impede imagens de ultrapassarem a tela */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* LOGO */
+.logo {
+    width: 100%;
+    max-width: 1870px;
+}
+
+/* CAMPOS DE PESQUISA */
+input[type="search"],
+input[type="text"] {
+    width: 90%;
+    max-width: 1800px;
+}
+
+/* CONTAINERS DAS IMAGENS */
+.fotoscristo,
+.fotoscataratas,
+.gramado {
+    width: 100%;
+    max-width: 1870px;
+    height: auto;
+    min-height: 350px;
+    padding: 20px;
+}
+
+/* Imagens dos pontos turísticos */
+.fotoscristo img,
+.fotoscataratas img,
+.gramado img {
+    width: 310px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   TABLETS
+   ========================= */
+
+@media (max-width: 1024px) {
+
+    .fotoscristo,
+    .fotoscataratas,
+    .gramado {
+        gap: 30px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    input[type="search"],
+    input[type="text"] {
+        width: 90%;
+    }
+
+    p {
+        padding: 10px;
+    }
+}
+
+
+/* =========================
+   CELULARES
+   ========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 10px;
+        line-height: 1.5;
+    }
+
+    /* Logo */
+    .logo {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Pesquisa */
+    .formulario1 {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    input[type="search"] {
+        width: 100%;
+        height: 45px;
+    }
+
+    /* Botões */
+    button {
+        width: 100%;
+        max-width: 250px;
+        height: 50px;
+    }
+
+    /* Galerias */
+    .fotoscristo,
+    .fotoscataratas,
+    .gramado {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .fotoscristo img,
+    .fotoscataratas img,
+    .gramado img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        flex: none;
+    }
+
+    /* Formulário de comentário */
+    .formulario {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        height: 150px;
+    }
+
+    input[type="file"] {
+        width: 100%;
+    }
+
+    ul {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+   ========================= */
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+
+    .fotoscristo,
+    .fotoscataratas,
+    .gramado {
+        padding: 10px;
+    }
+}
